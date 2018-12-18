@@ -1,0 +1,6 @@
+numpy==1.15.0
+scipy==1.1.0
+scikit-learn==0.19.2
+Flask-RESTful==0.3.6
+gunicorn==19.9.0
+

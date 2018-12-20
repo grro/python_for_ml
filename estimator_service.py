@@ -11,7 +11,7 @@ class HousePriceEstimatorResource(Resource):
 
     def post(self):
         house = request.get_json()  # parse the input as json
-        predicted_price = self.price_estimator.predict_price(house)
+        predicted_price = self.price_estimator.predict_prices([house])[0]
         return jsonify(price=predicted_price, date=datetime.now())
 
 

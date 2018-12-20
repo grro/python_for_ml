@@ -22,9 +22,6 @@ class HousePriceEstimator:
         features_list = self.extract_core_features_list(house_list)
         self.model.fit(features_list, price_list)
 
-    def predict_price(self, house):
-        return self.predict_prices([house])[0]
-
     def predict_prices(self, house_list):
         features_list = self.extract_core_features_list(house_list)
         return self.model.predict(features_list)

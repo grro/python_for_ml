@@ -3,6 +3,9 @@
 
 This project includes non-productive example code for illustration purposes.
 
+Please consider that the houses.csv (Ames Housing dataset) is not part of this project. 
+The Ames Housing dataset may be downloaded from here:  https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data
+
 | artifact     | description |
 | ------------ | ----------- |
 | [houses.ipynb](/houses.ipynb) | Notebook example - how to explore data  |

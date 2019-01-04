@@ -8,7 +8,10 @@ class HousePriceEstimator:
         self.model = LinearRegression()
 
     def extract_core_features_list(self, house_list):
-        return [self.extract_core_features(house) for house in house_list]
+        features_list = []
+        for house in house_list:
+            features_list.append(self.extract_core_features(house))
+        return features_list
 
     def extract_core_features(self, house):
         # returns the most relevant features as numeric values
